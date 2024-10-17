@@ -3,12 +3,14 @@ const dropdownCloseButton = document.getElementById("dropdownCloseButton");
 const dropdownMenu = document.getElementById("dropdownMenu");
 const backdrop = document.getElementById("backdrop");
 const techIcons = document.querySelectorAll(".tech-icon");
+const content = document.getElementById("content");
 
 dropdownButton.addEventListener("click", () => {
   dropdownMenu.classList.toggle("hidden");
   dropdownCloseButton.classList.toggle("hidden");
   dropdownButton.classList.add("hidden");
   backdrop.classList.toggle("hidden");
+  content.classList.toggle("overflow-hidden");
 });
 
 addEventListener("click", (e) => {
@@ -19,6 +21,7 @@ addEventListener("click", (e) => {
       dropdownButton.classList.remove("hidden");
       dropdownCloseButton.classList.toggle("hidden");
       backdrop.classList.toggle("hidden");
+      content.classList.toggle("overflow-hidden");
     }
   }
 });
