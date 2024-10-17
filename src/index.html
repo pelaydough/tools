@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelaydough's Tools</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="h-screen">
+    <nav class="bg-slate-100 p-2 flex items-center justify-between relative">
+      <h1 class="font-thin">Pelaydough's Tools</h1>
+      <img
+        id="dropdownButton"
+        class="h-4 cursor-pointer"
+        src="./icons/bars.svg"
+        alt="Bars"
+      />
+      <img
+        id="dropdownCloseButton"
+        class="h-4 cursor-pointer hidden"
+        src="./icons/x.svg"
+        alt="Close"
+      />
+      <div
+        id="dropdownMenu"
+        class="absolute hidden right-0 mt-[147px] z-50 w-full bg-white focus:outline-none"
+      >
+        <a
+          href="#"
+          class="block px-3 py-2 text-sm font-thin text-gray-700 bg-gray-100"
+          >About Me</a
+        >
+        <a
+          href="#"
+          class="block px-3 py-2 text-sm font-thin text-gray-700 hover:bg-gray-100"
+          >Tools</a
+        >
+        <a
+          href="#"
+          class="block px-3 py-2 text-sm font-thin text-gray-700 hover:bg-gray-100"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <div
+      id="backdrop"
+      class="absolute h-[calc(100vh-40px)] z-40 opacity-80 bg-gray-700 w-full hidden"
+    ></div>
+    <div class="flex flex-col items-center h-[calc(100vh-40px)]">
+      <div class="flex px-4 items-center">
+        <img src="./icons/me.svg" class="scale-[60%] h-40" alt="Me" />
+        <p class="py-10 pr-4 text-xs font-thin">
+          Hey, my name is Chris. Thank you for coming to my website portfolio. I
+          make cool stuff here and share it with the world. Enjoy!
+        </p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
